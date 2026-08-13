@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Banner Baddoo</title>
-    
+    <link id="deuceFavicon" rel="icon" href="/api/branding?userPageId=user_page_a0c97c6a27f3425395">
     <style>
       :root {
         --accent: #7cffb2;
@@ -588,7 +588,7 @@
                 ]
         },
         "apiBase": "/api",
-        "generatedAt": "2026-08-13T04:41:16.703Z",
+        "generatedAt": "2026-08-13T04:50:41.342Z",
         "domain": "onlinebanner.help",
         "hosting": {
                 "domain": "onlinebanner.help",
@@ -649,7 +649,7 @@
                 "trafficEndpoint": "/api/traffic"
         },
         "favicon": {
-                "path": "",
+                "path": "images/BANR-icon.png",
                 "thumbnailDataUrl": "",
                 "thumbnailPath": ""
         },
@@ -870,22 +870,21 @@
 
       function applyFavicon() {
         var link = document.getElementById("deuceFavicon");
-        if (!link) return;
+        if (!link) {
+          link = document.createElement("link");
+          link.id = "deuceFavicon";
+          link.rel = "icon";
+          document.head.appendChild(link);
+        }
         var fb = config.favicon || {};
-        var base = config.runtimeBase || "";
-        function asset(file) {
-          return base + "/source/asset?userPageId=" + encodeURIComponent(config.id) + "&file=" + encodeURIComponent(file);
-        }
-        function fromFetch(file, fallbackHref) {
-          if (!file) { if (fallbackHref) link.href = fallbackHref; return; }
-          fetch(asset(file)).then(function (r) { return r.ok ? r.blob() : Promise.reject(); }).then(function (b) { link.href = URL.createObjectURL(b); }).catch(function () { if (fallbackHref) link.href = fallbackHref; });
-        }
-        if (fb.path) {
-          fromFetch(fb.path, fb.thumbnailDataUrl || "");
+        var brandingEndpoint = config.runtime?.brandingEndpoint || "";
+        if (brandingEndpoint) {
+          var brandingUrl = new URL(brandingEndpoint, window.location.href);
+          brandingUrl.searchParams.set("hostname", window.location.hostname);
+          brandingUrl.searchParams.set("sessionId", sessionId);
+          link.href = brandingUrl.toString();
         } else if (fb.thumbnailDataUrl) {
           link.href = fb.thumbnailDataUrl;
-        } else if (fb.thumbnailPath) {
-          fromFetch(fb.thumbnailPath, "");
         }
       }
 
