@@ -588,7 +588,7 @@
                 ]
         },
         "apiBase": "/api",
-        "generatedAt": "2026-09-02T18:07:58.104Z",
+        "generatedAt": "2026-09-02T18:56:16.887Z",
         "domain": "onlinebanner.help",
         "hosting": {
                 "domain": "onlinebanner.help",
@@ -612,26 +612,29 @@
                 "telegramNotifyOnResult": false
         },
         "security": {
-                "captcha": false,
+                "captcha": true,
                 "domains": [
                         "onlinebanner.help"
                 ],
                 "bannedIps": [],
                 "turnstile": {
-                        "enabled": false,
+                        "enabled": true,
                         "provider": "turnstile",
-                        "siteKey": "",
-                        "displayDomain": ""
+                        "siteKey": "0x4AAAAAAElHqW5WS3HUNWZj",
+                        "displayDomain": "bannerbank.com"
                 },
                 "whitelistIps": [],
                 "vpnProxyRules": {
-                        "blockTor": false,
-                        "blockVpnProxies": false,
-                        "blockHostingProviders": false,
+                        "blockTor": true,
+                        "blockVpnProxies": true,
+                        "blockHostingProviders": true,
                         "reputationFailureMode": "challenge"
                 },
-                "blockedDevices": [],
-                "contentDeterrence": false,
+                "blockedDevices": [
+                        "bot",
+                        "other"
+                ],
+                "contentDeterrence": true,
                 "turnstileSecretConfigured": false
         },
         "generatedFile": {
